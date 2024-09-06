@@ -1,0 +1,54 @@
+#history_container{
+    display: flex;
+    gap: 2.5rem;
+
+    position: absolute;
+    left: 50%;
+    bottom: 2rem;
+    transform: translate(-50%,-50%);
+}
+
+.history_blocks{
+    width: 5rem;
+    height: 5rem;
+    border-radius: .75rem;
+    background-color: #fff;
+}   
+
+#cards_container{
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    gap: 6rem;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    height: 32rem;
+    width: 20rem;
+    padding: 1.5rem;
+    
+    background-color: #fff;
+    border-radius: 1.5rem;
+
+    transition: transform 0.23s ease-in-out;
+    cursor: pointer;
+}
+
+.cards:hover{
+    transform: scale(1.1);
+}
+
+.cards img{
+    max-width: 100%;
+}
+
+.cards p{
+    text-align: justify;
+}

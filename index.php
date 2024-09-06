@@ -4,20 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>History</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Historia</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="general.css">
 </head>
 
 <?php
-if(session_status() == PHP_SESSION_ACTIVE){
+if (session_status() == PHP_SESSION_ACTIVE) {
     session_destroy();
 }
 ?>
 
 <body>
-    <h1>Cards</h1>
-    <button class="btn btn-primary"><a href="primeiratela.php">Começar</a></button>
+    <article>
+        <h1>Akumu</h1>
+        <button id="btn_comecar"><a href="jogo.php">Iniciar</a></button>
+    </article>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 </html>

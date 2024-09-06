@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+
+@font-face {
+    font-family: "Sujoka";
+    font-weight: 600;
+    src: url("./assets/sujoka-font/SujokaPersonalUse-K7aXX.otf");
+}
+    
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box; 
+
+    text-decoration: none;
+
+    font-family: "Noto Sans TC", sans-serif;
+}
+
+body{
+    background-image: url(assets/7875703.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}

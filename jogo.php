@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="jogo.css">
-    <link rel="stylesheet" href="general.css">
+    <title>Akumu</title>
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/jogo.css">
 </head>
-<?php
-    if(session_status() == PHP_SESSION_NONE || session_status() == PHP_SESSION_DISABLED){
-        session_start();
-    }
-?>
+<?php session_start(); ?>
+
 <body>
-    <div id="cards_container">
-        <article class="cards"><img src="https://placehold.co/500x500" alt=""><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe possimus iusto, ipsam fugit officia incidunt ut quia.</p></article>
-        <article class="cards"><img src="https://placehold.co/500x500" alt=""><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem maxime molestiae, omnis expedita atque vitaue quia!</p></article>
-    </div>
+    <form action="mudacard.php" method="get" id="cards_container">
+        <?php
+        echo '<div class="cards" data-cliadoatual="'. $_SESSION["card_clicado"] .'"><button type="submit" name="c1" value="' .  $_SESSION['cards_atuais'][1] . '" class="img" style="background-image: url(' . $_SESSION["cards"][$_SESSION["cards_atuais"][1]] . ');"></button></div>';
+
+        if ($_SESSION["secao_atual"] != 1 && $_SESSION["secao_atual"] != 5) {
+            echo '<div class="cards"><button type="submit" name="c2" value="' .  $_SESSION['cards_atuais'][2] . '" class="img" style="background-image: url(' . $_SESSION["cards"][$_SESSION["cards_atuais"][2]] . ');"></button></div>';
+        };
+        ?>
+    </form>
     <ul id="history_container">
-        <li class="history_blocks"><img src="#" alt=""></li>
-        <li class="history_blocks"><img src="#" alt=""></li>
-        <li class="history_blocks"><img src="#" alt=""></li>
-        <li class="history_blocks"><img src="#" alt=""></li>
-        <li class="history_blocks"><img src="#" alt=""></li>
+        <?php 
+            foreach ($_SESSION["cards_escolhidos"] as $card) {
+                echo '<li class="history_blocks"><img src="'.$_SESSION["cards"][$card].'" alt=""></li>';
+            }
+        
+        ?>
     </ul>
 
-    <!-- Japones miseravel fica mendigo e sofre bastante (muito) e depois hiroshima e negazap -->
-</body>
-</html>
 
+</body>
+
+</html>

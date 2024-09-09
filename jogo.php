@@ -25,11 +25,7 @@
             foreach ($_SESSION["cards_escolhidos"] as $card) {
                 echo '<li class="history_blocks"><img src="'.$_SESSION["cards"][$card].'" alt=""></li>';
             }
-        
         ?>
     </ul>
-
-
 </body>
-
 </html>

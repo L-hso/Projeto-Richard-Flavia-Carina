@@ -10,6 +10,10 @@
 </head>
 
 <?php
+    if(session_status() == PHP_SESSION_ACTIVE){
+        session_destroy();
+    }
+    
     session_start();
 
     $_SESSION["cards"] = [

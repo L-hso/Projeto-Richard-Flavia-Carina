@@ -24,6 +24,7 @@ body {
     max-width: 100%;
 }
 
+
 #cards_container {
     display: flex;
     justify-content: center;
@@ -48,6 +49,7 @@ body {
     height: 100%;
     border:none;
     
+
     cursor: pointer;
 }
 
@@ -83,3 +85,4 @@ body {
     background-color: #ebe9e4;
     color: #233529;
 }*/
+

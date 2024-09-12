@@ -5,10 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Akumu</title>
     <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/fim.css">
 </head>
-<?php session_destroy(); ?>
+
 <body>
-    <a href="/" style="font-family: 'Hiroshima'; font-size: 10rem; text-decoration: none; color: #1e1e1e;
-                       position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); ">Fim</a>
+    <div id="cards_container" class="cards_container_do_fim">
+    <?php 
+        session_start();
+
+        foreach ($_SESSION["cards_escolhidos"] as $card) {
+            echo '<div class="cards cards_do_fim"><button type="submit" class="img" style="background-image: url(' . $_SESSION["cards"][$card] . '); background-size: cover;"></button></div>';
+        };
+    ?>
+    </div>
+    <button id="btn_resetar"><a href="/">Recomeçar</a></button>
 </body>
 </html>

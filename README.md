@@ -1,7 +1,6 @@
 # Projeto-Richard-Flavia-Carina
 
-O projeto é um jogo chamado Akumu feito com HTML5, CSS3 e PHP 8.
-
+O projeto é um jogo chamado Akumu feito com HTML5, CSS3 e PHP 8.  
 O enredo do jogo gira em torno da ODS 1 (Erradicação da pobreza) e 16 (Paz, justiça e instituições eficazes).
 
 ## Akumu
@@ -13,12 +12,12 @@ O enredo do jogo gira em torno da ODS 1 (Erradicação da pobreza) e 16 (Paz, ju
 
 ## Moral
 
-O jogo mostra a importância das ODS's através da história impactante de Akumu, exibindo o mundo que essas iniciativas tentam ajudar.
+O jogo mostra a importância das ODS's através da história impactante de Akumu, exibindo o mundo das pessoas que essas iniciativas tentam ajudar.
 
 ## Como executar
 
 1. Clone o repo para a sua máquina
-2. Baixe uma extensão para executar um servidor local
+2. Baixe alguma extensão para executar um servidor local
 
 ## Créditos
 

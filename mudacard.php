@@ -34,10 +34,10 @@ if (isset($_GET["c1"]) || isset($_GET["c2"])) {
 
     // Continua ou finaliza o jogo baseado no card clicado por último
     if ($_SESSION["card_clicado"] == 16) {
-        header("Location: /fim.php");
+        header("Location: ./fim.php");
     } else {
-        header("Location: /jogo.php");
+        header("Location: ./jogo.php");
     }
 } else {
-    header("Location: /");
+    header("Location: ./");
 }

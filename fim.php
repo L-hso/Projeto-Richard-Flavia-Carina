@@ -18,6 +18,6 @@
         };
     ?>
     </div>
-    <button id="btn_resetar"><a href="/">Recomeçar</a></button>
+    <button id="btn_resetar"><a href="./">Recomeçar</a></button>
 </body>
 </html>

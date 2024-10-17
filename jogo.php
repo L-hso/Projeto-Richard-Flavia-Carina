@@ -13,10 +13,10 @@
 <body>
     <form action="mudacard.php" method="get" id="cards_container">
         <?php
-        echo '<div class="cards "><button type="submit" name="c1" value="' .  $_SESSION['cards_atuais'][1] . '" class="img" style="background-image: url(' . $_SESSION["cards"][$_SESSION["cards_atuais"][1]] . ');"></button></div>';
+        echo '<div class="cards"><div class="bambu_esquerda"></div><div class="bambu_direita"></div><div class="bambu_acima"></div><button type="submit" name="c1" value="' .  $_SESSION['cards_atuais'][1] . '" class="card_img" style="background-image: url(' . $_SESSION["cards"][$_SESSION["cards_atuais"][1]] . ');"></button></div>';
 
         if ($_SESSION["secao_atual"] != 1 && $_SESSION["secao_atual"] != 5) {
-            echo '<div class="cards"><button type="submit" name="c2" value="' .  $_SESSION['cards_atuais'][2] . '" class="img" style="background-image: url(' . $_SESSION["cards"][$_SESSION["cards_atuais"][2]] . ');"></button></div>';
+            echo '<div class="cards"><div class="bambu_esquerda"></div><div class="bambu_direita"></div><div class="bambu_acima"></div><button type="submit" name="c2" value="' .  $_SESSION['cards_atuais'][2] . '" class="card_img" style="background-image: url(' . $_SESSION["cards"][$_SESSION["cards_atuais"][2]] . ');"></button></div>';
         };
         ?>
     </form>

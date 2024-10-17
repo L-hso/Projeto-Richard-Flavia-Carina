@@ -21,8 +21,6 @@ body{
 .cards_do_fim{
     height: 20rem;
     width: 12rem;
-    height: 30rem;
-    width: 18rem;
     padding: .25rem;
     background-color: #fff;
     
@@ -56,8 +54,8 @@ body{
 
     padding: 0.35rem 1.75rem;
 
-    font-family: "Noto Sans TC";
+    font-family: "Hiroshima", sans-serif;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: #efefef;
 }

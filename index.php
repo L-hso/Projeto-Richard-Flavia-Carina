@@ -19,10 +19,10 @@
     $_SESSION["cards"] = [
         1=>"./assets/inicio.png", 2=>"./assets/comer.png",3=>"./assets/drogas.png", 
         4=>"./assets/banho.png", 5=>"./assets/gritar.png", 6=>"./assets/dormir.png", 
-        7=>"./assets/assalto.png", 8=>"https://placehold.co/270x480", 9=>"https://placehold.co/269x480",
-        10=>"https://placehold.co/268x480", 11=>"https://placehold.co/267x480", 12=>"https://placehold.co/266x480",
-        13=>"https://placehold.co/265x480", 14=>"https://placehold.co/264x480", 15=>"./assets/latrocinio.png", 
-        16=>"https://placehold.co/262x480"
+        7=>"./assets/assalto.png", 8=>"https://placehold.co/270x480", 9=>"./assets/mijar.png",
+        10=>"./assets/desculpa.png", 11=>"./assets/agredir.png", 12=>"./assets/racao.png",
+        13=>"./assets/sucidio.png", 14=>"./assets/correr.png", 15=>"./assets/latrocinio.png", 
+        16=>"./assets/bomba.png"
     ];
 
     $_SESSION["secao_atual"] = 1;

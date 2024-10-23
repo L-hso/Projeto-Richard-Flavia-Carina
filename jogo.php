@@ -11,7 +11,8 @@
 <?php session_start(); ?>
 
 <body>
-    <form action="mudacard.php" method="get" id="cards_container">
+    <form action="mudacard.php" method="get" >
+        <div id="cards_container">
         <?php
         echo '<div class="cards"><div class="bambu_esquerda"></div><div class="bambu_direita"></div><div class="bambu_acima"></div><button type="submit" name="c1" value="' .  $_SESSION['cards_atuais'][1] . '" class="card_img" style="background-image: url(' . $_SESSION["cards"][$_SESSION["cards_atuais"][1]] . ');"></button></div>';
 
@@ -19,15 +20,16 @@
             echo '<div class="cards"><div class="bambu_esquerda"></div><div class="bambu_direita"></div><div class="bambu_acima"></div><button type="submit" name="c2" value="' .  $_SESSION['cards_atuais'][2] . '" class="card_img" style="background-image: url(' . $_SESSION["cards"][$_SESSION["cards_atuais"][2]] . ');"></button></div>';
         };
         ?>
-    </form>
-    <ul id="history_container">
-        <?php 
-            $_SESSION["cards_escolhidos"] = array_unique($_SESSION["cards_escolhidos"]);
+        </div>
+        <ul id="history_container">
+            <?php 
+                $_SESSION["cards_escolhidos"] = array_unique($_SESSION["cards_escolhidos"]);
 
-            foreach ($_SESSION["cards_escolhidos"] as $card) {
-                echo '<li class="history_blocks"><img src="'.$_SESSION["cards"][$card].'" alt=""></li>';
-            };
-        ?>
-    </ul>
+                foreach ($_SESSION["cards_escolhidos"] as $card) {
+                    echo '<li class="history_blocks"><img src="'.$_SESSION["cards"][$card].'" alt=""></li>';
+                };
+            ?>
+        </ul>
+    </form>
 </body>
 </html>
